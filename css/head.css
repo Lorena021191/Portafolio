@@ -1,0 +1,43 @@
+
+.head{
+
+  align-items: center;
+  display: flex;
+  
+justify-content: space-between;
+  
+    padding-left: 2rem;
+    font-size: 1,3rem;
+
+}
+.head__logo{
+  font-family: var(--mukta);
+  font-size: 30px;
+  font-weight: 300px;
+  font-style: bold;
+  color: var(--background-enlace);
+}
+@media screen and (min-width:0) and (max-width: 1000px) {
+header{
+           overflow:hidden; 
+}
+.head{
+
+flex-direction: column;
+display:flex;
+justify-content: center; 
+background: #1C1D20;
+width: 100%;
+ 
+}
+.head__logo{
+
+text-align: left;
+
+  margin-top: 20px;
+  font-size: 1.5rem;
+height:7px;
+
+  
+}
+}

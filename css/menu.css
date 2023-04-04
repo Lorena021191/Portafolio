@@ -1,0 +1,152 @@
+header{
+overflow-x: hidden;
+
+}
+.head{
+  width: 100%;
+
+}
+.nav__lista{
+
+    display: flex;
+padding-top: 10px;
+font-size: 20px;
+
+
+}
+
+.head__link{
+
+  margin-right: 1.25rem;
+  text-decoration: none;
+  margin-left: 1.25rem;
+      
+  }
+.head__link:hover{
+text-decoration:underline;
+color: var(--background-enlace);
+    font-weight: bold;
+
+  
+}
+.head__enlace--activo{
+  color: var(--background-enlace);
+    font-weight: bold;
+    margin-right: 1.25rem;
+    font-size: 20px;
+    text-decoration: none;
+     
+}
+
+
+.head__enlace{
+
+  list-style: none;
+}
+.burger{
+
+display:none;
+    background-color:transparent;
+    cursor: pointer;
+    border:none;
+    margin:0;
+    padding:0;
+}
+.burger span{
+        background-color: #537FE7;
+           display:block;
+        height:3px;
+        width: 28px;
+        margin:10px auto;
+
+        border-radius:2px;    
+    }
+@media screen and (min-width:0) and (max-width: 1000px) {
+
+
+.burger{
+   display:block;
+          cursor:pointer;
+          position: absolute; 
+          top:7px;
+          right:25px;
+          transition: 0.2s  0.1s; 
+}
+.head__navegacion{
+         
+flex-direction:column;
+          align-items: flex-start;
+          padding-top: 25px;
+          padding-bottom: 25px;
+            font-size: 1rem;
+                     color: black;
+      }
+.nav__lista{
+     
+flex-direction:column;
+          justify-content: space-around;
+          align-items:center;
+          height: 50vh;         
+          margin:0;
+          padding:0; 
+          display:none;
+          opacity:0;
+          transition: opacity 5s ease-out;
+          width:100%;
+          font-size: 1rem;
+          color: black;
+
+
+}
+.head__link{
+text-decoration:none;
+      font-size: 1.4rem;
+      color:black;
+      font-weight:600;
+        color: white;
+}
+.head__enlace{
+ padding: 0 40px;
+      list-style-type: none;
+      transition: 0.3s;
+}
+.head__enlace--activo{
+  font-size: 1.4rem;
+}
+.moon{
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  width: 4rem;
+  background-color: #537FE7;
+
+}
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+.nav__lista.activado{
+      display:flex; 
+      animation: muestraMenu 350ms ease-in-out both;
+
+  }
+  .head.activado{
+        display: flex;
+   flex-direction: column;
+  }
+  .sp1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+  }
+  
+  .sp2.animado{
+    opacity: 0;
+  }
+  .sp3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+  }
+
+ .ham.girar:hover{
+     transform:rotate(360deg);
+ }
+}

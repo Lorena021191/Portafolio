@@ -1,0 +1,94 @@
+.footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+width: 100%;
+height: 10vh;
+margin-top: 40px;
+}
+.footer__rodape{
+text-align: center;
+margin-top: 30px;
+background: #1C1D20;
+	
+}
+.fondo{
+	width: 100%;
+	background: #1C1D20;
+	color: white;
+
+}
+.redes{
+
+background: #1C1D20;
+
+}
+.perfil__icono_footer{
+color: white;
+border: 2px solid white;
+	border-radius: 5px;
+
+font-size: 25px;
+
+margin-right: 2px;
+text-align: center;
+margin-top: 5px;
+margin-bottom: 5px;
+
+
+}
+.perfil__icono_footer:hoover{
+	background-color:var(--background-enlace);
+	
+}
+.perfil__enlace__footer{
+
+
+margin-bottom: 5px;
+	margin: 5px;
+
+}
+.año{
+margin-top: 10px;
+text-align: center;
+}
+
+@media screen and (min-width:0) and (max-width: 1000px) {
+
+.perfil__icono_footer{
+
+
+
+font-size: 10px;
+
+
+
+
+
+}
+.footer{
+		display: flex;
+margin-top: 5px;
+width: 100%;
+
+margin-top: 10px;
+}
+.año{
+margin-top: 2px;
+text-align: center;
+}
+.footer__rodape{
+
+margin-top: 10px;
+
+	
+}
+.fondo{
+width: 100%;
+height: 10vh;	
+}
+.redes{
+display: none;
+}
+}

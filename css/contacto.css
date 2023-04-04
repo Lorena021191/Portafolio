@@ -1,0 +1,135 @@
+.contacto-container{
+background:linear-gradient(rgba(5,7,12,0.60),rgba(5,7,12,0.50) ), url("../assets/nieve.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+margin-top: 20px;
+color: white;
+
+
+}
+.titulo_contacto{
+	margin-top:20px;
+	text-align: center;
+
+}
+.form_contacto__cont{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+
+}
+.form_contacto{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	width: 50%;
+	height: 80vh;
+background: rgba(5,7,12,0.30);
+
+		align-items: center;
+
+}
+
+.form_contacto__input{
+
+margin-top: 15px;
+	width: 70%;
+	height: 30px;
+background: rgba(5,7,12,0.10);
+color:var( --background-body);
+border-radius: 30px;
+ box-shadow: 0px 1px 5px var( --background-enlace);
+ padding-top: 5px;
+ font-size: 1rem;
+}
+.form_contacto__textArea{
+	margin-top: 20px;
+	width: 70%;
+	height: 150px;
+	background: rgba(5,7,12,0.10);
+	color:var( --background-body);
+	border-radius: 10px;
+	padding: 5px;
+	 box-shadow: 0px 1px 5px var( --background-enlace);
+	  font-size: 1rem;
+}
+.input-label{
+
+
+margin-top: 5px;
+	color:var(--background-body);
+	text-align: left;
+	font-weight: bold;
+}
+.input-container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ flex-direction: column;
+ width: 100%;
+
+  
+}
+
+.input-container, input:focus {
+    outline: none;
+}
+.input-container.ok  input  {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+
+} 
+.input-container.falla  input {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+ display: block;
+  
+}
+.input-container.ok  textarea  {
+    border: 0.1px solid;
+    border-color: #08ffc8;
+   
+
+} 
+.input-container.falla  textarea {
+    border: 0.1px solid;
+    border-color: #fe5f55;
+   
+
+ 
+  
+}
+
+.input-container p {
+visibility: hidden;
+position: relative;
+margin-top: 2px;
+margin-bottom: 2px;
+    font-size: small;
+    font-weight: 500;
+    text-align: right;
+ display: block;
+
+
+
+}
+
+.input-container.falla p {
+  visibility: visible;
+    color:#e74c3c;
+
+
+}
+@media screen and (min-width:0) and (max-width: 1000px) {
+
+.form_contacto{
+
+	width: 70%;
+	margin-top: 20px;
+		height: 70vh;
+}
+}

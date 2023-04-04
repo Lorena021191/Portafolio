@@ -1,0 +1,90 @@
+.perfil__contenido{
+background:linear-gradient(rgba(5,7,12,0.90),rgba(5,7,12,0.90) ), url("../assets/inicio.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+margin-top: 20px;
+color: white;
+display: flex;
+align-items: center;
+flex-wrap: nowrap;
+   
+flex-direction: column;
+    align-items: center;
+    justify-content: center;
+text-align: center;
+}
+
+.perfil__contenido__imag{
+	margin-top: 40px;
+	margin: auto;
+    text-align: center;
+    max-width:  500px;
+    text-align: center;
+     background: rgba(5,7,12,0.40);
+     border-radius: 30px;
+display: block;
+
+justify-content: center;
+align-items: center;
+        
+}
+
+.perfil__imagen{
+
+margin-top: 30px;
+margin-bottom: 20px;
+border: 10px solid ;
+border-color: var( --background-enlace);
+border-radius: 100%;
+width: 45%;
+   	max-width: 100%;
+
+}
+.perfil__titulo{
+margin-top: 5px;
+font-size: 2rem;
+}
+.perfil__titulo__carrera{
+	font-size: 1.2rem;
+	margin-top: 8px;
+	   	max-width: 100%;
+}
+.perfil__enlace__redes{
+	display: inline-block;
+	margin-top: 25px;
+color: white;
+width: 35px;
+height: 35px;
+border: 2px solid white;
+border-radius: 10px;
+padding: 2px;
+margin-right: 2px;
+margin-bottom: 5px;
+   	max-width: 100%;
+}
+.perfil__enlace__redes:hover{
+	 background: var(--background-enlace);
+	 color: black;
+}
+.perfil__icono{
+font-size: 30px;
+margin-top: 2px;
+   	max-width: 100%;
+}
+@media screen and (min-width:0) and (max-width: 1000px) {
+.perfil__contenido{
+
+width: 100%;
+}
+.perfil__titulo{
+
+font-size: 1.5rem;
+}
+.perfil__titulo__carrera{
+  font-size: 1rem;
+  text-align: center;
+
+    
+}
+}

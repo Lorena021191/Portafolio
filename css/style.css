@@ -1,0 +1,100 @@
+:root {
+    --background-pagina: #1C1D20;
+    --background-blanco: #FFFFFF;
+    --background-enlace: #537FE7;
+ --background-body: #E9F8F9;
+    --background-footer: #768ED5;
+
+    --courgette: 'Courgette', cursive;
+    --monserrat: 'Montserrat', sans-serif;
+    --mukta: 'Mukta', open-sans;
+     --opens:'Open Sans', sans-serif;
+  --redHat:'Red Hat Display', sans-serif;
+--astro: url("../assets/moon.svg");
+--inicio: url("../assets/inicio.jpg");
+}
+
+.darktheme{
+ background: var(--background-pagina);
+    color: var( --background-blanco);
+--astro: url("../assets/sun-solid.svg");
+}
+*{
+ 
+}
+
+body{
+    font-family: var(--redHat);
+        max-width: 100%;
+        overflow-x:hidden;
+   transition: 2s;
+   background-color: var(  --background-body);
+}
+
+.container {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+.astro {
+  background-image: var(--astro) ;
+background-repeat: no-repeat;
+  
+  
+  width: 30px;
+  height:30px;
+}
+
+
+
+h1{
+     font-weight: bold;
+   font-family: var(--courgette);
+
+   font-style: bold; 
+   font-size: 2.5rem;
+}
+h2{
+     font-weight: bold;
+   font-family: var(--courgette);
+color: var(--background-enlace);
+   font-style: bold; 
+   font-size: 2rem;
+}
+.boton{
+  font-family: var(--redHat);
+    background: var(--background-enlace);
+    color: var(--background-blanco);
+    font-size: 1rem;
+    width: 170px;
+    height: 30px;
+   font-weight: bold;
+    border-radius: 30px;
+    margin-top: 15px;
+      box-shadow: 10px;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    
+}
+.boton:hover{
+    background:black ;
+    color: var(--background-enlace);
+ font-weight: bold;
+ border: solid var(--background-enlace);
+    box-shadow: 2px 2px 2px var(--background-enlace);
+
+}
+
+@media screen and (min-width:0) and (max-width: 1000px){
+  .astro{
+    width: 30px;
+  height:30px;
+
+  }
+  .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+}
+
+
+
